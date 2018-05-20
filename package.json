@@ -2,11 +2,15 @@
   "name": "game-of-life",
   "version": "0.1.0",
   "private": true,
+  "description": "Implementation of the Conway's game of life.",
   "dependencies": {
+    "bootstrap": "4.1.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
   },
+  "author": "Henry Cuffy",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -1,0 +1,26 @@
+.theBoard {
+  border-style: solid;
+  border-color: black;
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+}
+
+.live-cell {
+  background-color: #6da0f2;
+}
+
+.dead-cell {
+  background-color: #54575b;
+}
+
+.btnSet {
+  margin: 20px;
+  text-align: center;
+}
+
+.App {
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #3f3f51;
+}
