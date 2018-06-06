@@ -3,8 +3,9 @@ import '../style.css';
 
 const Cell = ({check}) => {
 
+let cellState = (check) ? 'live-cell' : 'dead-cell';
   return (
-      <td className={check}></td>
+      <td className={cellState}></td>
   )
 }
 

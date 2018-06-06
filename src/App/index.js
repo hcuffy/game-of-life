@@ -9,7 +9,12 @@ class App extends Component {
 
     this.state = {
       board: [],
-      size: 20
+      size: 20,
+      timer: null,
+      counter: 0,
+      hasStarted: false,
+      initiated: false,
+      speed: 1000
     };
 
     this.createBoard = this.createBoard.bind(this);
@@ -22,7 +27,7 @@ createBoard() {
   for (let i = 0; i < this.state.size; i++) {
     let row = [];
     for (let j = 0; j < this.state.size; j++) {
-      let cell = Math.random() >= 0.70 ? 'live-cell' : 'dead-cell';
+      let cell = Math.random() >= 0.70;
       row.push(cell);
     }
     board.push(row);
@@ -39,6 +44,7 @@ timesFifty() {
     let size = this.state.size;
         size = 50;
     this.setState({ size });
+
     }
 
   render() {
@@ -47,6 +53,7 @@ timesFifty() {
       <header>
         <h1>Game of Life</h1>
       </header>
+       <h1>{this.state.counter}</h1>
         <Table
         board = { this.state.board }
         size = { this.state.size }
